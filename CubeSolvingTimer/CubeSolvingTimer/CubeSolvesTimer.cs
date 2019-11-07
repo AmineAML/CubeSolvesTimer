@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CubeSolvingTimer
@@ -18,8 +11,8 @@ namespace CubeSolvingTimer
         }
 
         int NoOfSolves = 0;
-        CounterTimer timer = new CounterTimer();
-        private void btnStart_KeyPress(object sender, KeyPressEventArgs e)
+        readonly CounterTimer timer = new CounterTimer();
+        private void BtnStart_KeyPress(object sender, KeyPressEventArgs e)
         {
             //Start timer
             timer.SetTime(00, 0);
@@ -36,30 +29,29 @@ namespace CubeSolvingTimer
             labelDoYourBest.Text = "DO YOUR BEST!";
 
             //Set focus to the stop button
-            btnStop.Focus();
+            BtnStop.Focus();
         }
 
         int i = 0;
         string records;
+
         //Generate white spaces to skip of space after first line
-        string spaces = new string(' ', 54);
-        string[] Solves = new string[12];
-        public bool btnStopKeyPressed = false;
-        private void btnStop_KeyPress(object sender, KeyPressEventArgs e)
+        readonly string spaces = new string(' ', 54);
+        readonly string[] Solves = new string[12];
+        private void BtnStop_KeyPress(object sender, KeyPressEventArgs e)
         {
-            btnStopKeyPressed = true;
             //Stop timer
             timer.Stop();
 
             //Return the text to the default value set from Tag from Properties of this label
             labelNoSolves.Text = labelNoSolves.Tag.ToString();
-            labelNoSolves.Text = labelNoSolves.Text + NoOfSolves;
+            labelNoSolves.Text += NoOfSolves;
 
             //"GOOD! BUT CAN YOU DO BETTER" stop button's message
-            labelDoYourBest.Text = "Good! but can you do better?";
+            labelDoYourBest.Text = labelDoYourBest.Tag.ToString();
 
             //Set focus back to the start button
-            btnStart.Focus();
+            BtnStart.Focus();
 
             //Reset the array index as the array limit is 12
             if (i == 12)
@@ -73,18 +65,6 @@ namespace CubeSolvingTimer
             labelSessionSolves.Text = labelSessionSolves.Tag.ToString() + records;
 
             i++;
-        }
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            //var sw = System.Diagnostics.Stopwatch.StartNew();
-            //100 lines of code... 
-            //labelTimer.Text = sw.Elapsed.ToString();
-        }
-
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

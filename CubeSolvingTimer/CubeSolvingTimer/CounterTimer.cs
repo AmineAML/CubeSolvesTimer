@@ -10,7 +10,7 @@ namespace CubeSolvingTimer
     class CounterTimer: IDisposable
     {
         public Action TimeChanged;
-        public Action CountDownFinished;
+        //public Action CountDownFinished;
 
         public bool IsRunnign => timer.Enabled;
 
@@ -20,13 +20,13 @@ namespace CubeSolvingTimer
             set => timer.Interval = value;
         }
 
-        private Timer timer = new Timer();
+        private readonly Timer timer = new Timer();
 
         private DateTime _maxTime = new DateTime(1, 1, 1, 0, 30, 0);
-        private DateTime _minTime = new DateTime(1, 1, 1, 0, 0, 0);
+        //private DateTime _minTime = new DateTime(1, 1, 1, 0, 0, 0);
 
         public DateTime TimeLeft { get; private set; }
-        private long TimeLeftMs => TimeLeft.Ticks / TimeSpan.TicksPerMillisecond;
+        //private long TimeLeftMs => TimeLeft.Ticks / TimeSpan.TicksPerMillisecond;
 
         public string TimeLeftStr => TimeLeft.ToString("mm:ss");
 

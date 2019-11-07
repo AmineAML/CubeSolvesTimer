@@ -31,26 +31,26 @@
             this.labelTimer = new System.Windows.Forms.Label();
             this.labelNoSolves = new System.Windows.Forms.Label();
             this.labelSessionSolves = new System.Windows.Forms.Label();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnStop = new System.Windows.Forms.Button();
+            this.BtnStart = new System.Windows.Forms.Button();
+            this.BtnStop = new System.Windows.Forms.Button();
             this.labelDoYourBest = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTimer
             // 
-            this.labelTimer.AutoSize = true;
-            this.labelTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimer.Location = new System.Drawing.Point(192, 122);
+            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimer.Location = new System.Drawing.Point(0, 65);
             this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(149, 39);
+            this.labelTimer.Size = new System.Drawing.Size(534, 93);
             this.labelTimer.TabIndex = 0;
             this.labelTimer.Text = "00:00:00";
-            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // labelNoSolves
             // 
             this.labelNoSolves.AutoSize = true;
-            this.labelNoSolves.Location = new System.Drawing.Point(113, 339);
+            this.labelNoSolves.Location = new System.Drawing.Point(142, 342);
             this.labelNoSolves.Name = "labelNoSolves";
             this.labelNoSolves.Size = new System.Drawing.Size(98, 17);
             this.labelNoSolves.TabIndex = 1;
@@ -60,7 +60,7 @@
             // labelSessionSolves
             // 
             this.labelSessionSolves.AutoSize = true;
-            this.labelSessionSolves.Location = new System.Drawing.Point(9, 399);
+            this.labelSessionSolves.Location = new System.Drawing.Point(45, 396);
             this.labelSessionSolves.MaximumSize = new System.Drawing.Size(400, 0);
             this.labelSessionSolves.MinimumSize = new System.Drawing.Size(195, 0);
             this.labelSessionSolves.Name = "labelSessionSolves";
@@ -70,48 +70,59 @@
             this.labelSessionSolves.Text = "This session\'s last 12 solves: ";
             this.labelSessionSolves.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnStart
+            // BtnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(12, 214);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(153, 87);
-            this.btnStart.TabIndex = 3;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            this.btnStart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnStart_KeyPress);
+            this.BtnStart.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BtnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStart.ForeColor = System.Drawing.Color.White;
+            this.BtnStart.Location = new System.Drawing.Point(12, 214);
+            this.BtnStart.Name = "BtnStart";
+            this.BtnStart.Size = new System.Drawing.Size(153, 87);
+            this.BtnStart.TabIndex = 3;
+            this.BtnStart.Text = "Start";
+            this.BtnStart.UseVisualStyleBackColor = false;
+            this.BtnStart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BtnStart_KeyPress);
             // 
-            // btnStop
+            // BtnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(369, 214);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(153, 87);
-            this.btnStop.TabIndex = 4;
-            this.btnStop.Text = "Stop";
-            this.btnStop.UseVisualStyleBackColor = true;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
-            this.btnStop.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnStop_KeyPress);
+            this.BtnStop.BackColor = System.Drawing.Color.Crimson;
+            this.BtnStop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStop.ForeColor = System.Drawing.Color.White;
+            this.BtnStop.Location = new System.Drawing.Point(369, 214);
+            this.BtnStop.Name = "BtnStop";
+            this.BtnStop.Size = new System.Drawing.Size(153, 87);
+            this.BtnStop.TabIndex = 4;
+            this.BtnStop.Text = "Stop";
+            this.BtnStop.UseVisualStyleBackColor = false;
+            this.BtnStop.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BtnStop_KeyPress);
             // 
             // labelDoYourBest
             // 
-            this.labelDoYourBest.AutoSize = true;
-            this.labelDoYourBest.Location = new System.Drawing.Point(217, 57);
+            this.labelDoYourBest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelDoYourBest.Location = new System.Drawing.Point(0, 0);
+            this.labelDoYourBest.Margin = new System.Windows.Forms.Padding(0);
             this.labelDoYourBest.Name = "labelDoYourBest";
-            this.labelDoYourBest.Size = new System.Drawing.Size(0, 17);
+            this.labelDoYourBest.Size = new System.Drawing.Size(534, 65);
             this.labelDoYourBest.TabIndex = 5;
             this.labelDoYourBest.Tag = "Good! but can you do better?";
+            this.labelDoYourBest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CubeSolvesTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(534, 490);
-            this.Controls.Add(this.labelDoYourBest);
-            this.Controls.Add(this.btnStop);
-            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.BtnStop);
+            this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.labelSessionSolves);
             this.Controls.Add(this.labelNoSolves);
             this.Controls.Add(this.labelTimer);
+            this.Controls.Add(this.labelDoYourBest);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "CubeSolvesTimer";
             this.Text = "CubeSolvesTimer";
             this.ResumeLayout(false);
@@ -124,8 +135,8 @@
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.Label labelNoSolves;
         private System.Windows.Forms.Label labelSessionSolves;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button BtnStart;
+        private System.Windows.Forms.Button BtnStop;
         private System.Windows.Forms.Label labelDoYourBest;
     }
 }
