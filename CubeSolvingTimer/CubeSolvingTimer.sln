@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeSolvingTimer", "CubeSolvingTimer\CubeSolvingTimer.csproj", "{F16A7279-CD22-42AA-B513-CE3CF99299DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F16A7279-CD22-42AA-B513-CE3CF99299DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16A7279-CD22-42AA-B513-CE3CF99299DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16A7279-CD22-42AA-B513-CE3CF99299DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16A7279-CD22-42AA-B513-CE3CF99299DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E7B2DF4-E1E7-4A15-8B56-C6E2F6A6A0B6}
+	EndGlobalSection
+EndGlobal

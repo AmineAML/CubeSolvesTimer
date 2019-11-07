@@ -1,0 +1,8 @@
+﻿Cube Solves Timer app
+-Start button and Stop button are controlled by the space key from teh keyboard
+-If the user want to start solving the cube, then s/he click on start
+-If the user solve the cube, then s/he click on stop
+-In the meantime the label on top-center displays an accurate timer with miliseconds
+-No. of solves in this session(when the app opened to the app closed)
+-Last 12 solves in this session(when the app opened to the app closed) seconds
+-Other minimalistic informations
