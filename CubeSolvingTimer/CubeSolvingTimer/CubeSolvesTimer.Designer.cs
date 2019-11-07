@@ -34,6 +34,7 @@
             this.BtnStart = new System.Windows.Forms.Button();
             this.BtnStop = new System.Windows.Forms.Button();
             this.labelDoYourBest = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTimer
@@ -109,12 +110,22 @@
             this.labelDoYourBest.Tag = "Good! but can you do better?";
             this.labelDoYourBest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 464);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(505, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Use any keyboard key to start and stop    |    Fastest time record: 3.47 seconds";
+            // 
             // CubeSolvesTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(534, 490);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnStop);
             this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.labelSessionSolves);
@@ -138,6 +149,7 @@
         private System.Windows.Forms.Button BtnStart;
         private System.Windows.Forms.Button BtnStop;
         private System.Windows.Forms.Label labelDoYourBest;
+        private System.Windows.Forms.Label label1;
     }
 }
 

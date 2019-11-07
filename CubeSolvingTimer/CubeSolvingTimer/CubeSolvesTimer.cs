@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CubeSolvingTimer
@@ -14,6 +15,9 @@ namespace CubeSolvingTimer
         readonly CounterTimer timer = new CounterTimer();
         private void BtnStart_KeyPress(object sender, KeyPressEventArgs e)
         {
+            BtnStop.BackColor = Color.Crimson;
+            BtnStart.BackColor = Color.LightSteelBlue;
+
             //Start timer
             timer.SetTime(00, 0);
 
@@ -40,6 +44,9 @@ namespace CubeSolvingTimer
         readonly string[] Solves = new string[12];
         private void BtnStop_KeyPress(object sender, KeyPressEventArgs e)
         {
+            BtnStart.BackColor = Color.CornflowerBlue;
+            BtnStop.BackColor = Color.PaleVioletRed;
+
             //Stop timer
             timer.Stop();
 
