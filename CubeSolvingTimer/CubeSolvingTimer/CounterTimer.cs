@@ -28,9 +28,9 @@ namespace CubeSolvingTimer
         public DateTime TimeLeft { get; private set; }
         //private long TimeLeftMs => TimeLeft.Ticks / TimeSpan.TicksPerMillisecond;
 
-        public string TimeLeftStr => TimeLeft.ToString("mm:ss");
+        public string TimeLeftStr => TimeLeft.ToString("m:s");
 
-        public string TimeLeftMsStr => TimeLeft.ToString("mm:ss:ff");
+        public string TimeLeftMsStr => TimeLeft.ToString("m:s.ff");
 
         private void TimerTick(object sender, EventArgs e)
         {

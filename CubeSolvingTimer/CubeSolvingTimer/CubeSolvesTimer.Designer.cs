@@ -35,6 +35,8 @@
             this.BtnStop = new System.Windows.Forms.Button();
             this.labelDoYourBest = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelAverageOfFive = new System.Windows.Forms.Label();
+            this.labelAverageOfTwelve = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTimer
@@ -45,31 +47,30 @@
             this.labelTimer.Name = "labelTimer";
             this.labelTimer.Size = new System.Drawing.Size(534, 93);
             this.labelTimer.TabIndex = 0;
-            this.labelTimer.Text = "00:00:00";
+            this.labelTimer.Text = "0:0.00";
             this.labelTimer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // labelNoSolves
             // 
-            this.labelNoSolves.AutoSize = true;
-            this.labelNoSolves.Location = new System.Drawing.Point(142, 342);
+            this.labelNoSolves.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelNoSolves.Location = new System.Drawing.Point(0, 340);
             this.labelNoSolves.Name = "labelNoSolves";
-            this.labelNoSolves.Size = new System.Drawing.Size(98, 17);
+            this.labelNoSolves.Size = new System.Drawing.Size(534, 55);
             this.labelNoSolves.TabIndex = 1;
             this.labelNoSolves.Tag = "No. of solves: ";
             this.labelNoSolves.Text = "No. of solves: ";
+            this.labelNoSolves.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelSessionSolves
             // 
-            this.labelSessionSolves.AutoSize = true;
-            this.labelSessionSolves.Location = new System.Drawing.Point(45, 396);
-            this.labelSessionSolves.MaximumSize = new System.Drawing.Size(400, 0);
-            this.labelSessionSolves.MinimumSize = new System.Drawing.Size(195, 0);
+            this.labelSessionSolves.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelSessionSolves.Location = new System.Drawing.Point(0, 395);
             this.labelSessionSolves.Name = "labelSessionSolves";
-            this.labelSessionSolves.Size = new System.Drawing.Size(195, 17);
+            this.labelSessionSolves.Size = new System.Drawing.Size(534, 95);
             this.labelSessionSolves.TabIndex = 2;
             this.labelSessionSolves.Tag = "This session\'s last 12 solves: ";
             this.labelSessionSolves.Text = "This session\'s last 12 solves: ";
-            this.labelSessionSolves.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelSessionSolves.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // BtnStart
             // 
@@ -119,19 +120,40 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Use any keyboard key to start and stop    |    Fastest time record: 3.47 seconds";
             // 
+            // labelAverageOfFive
+            // 
+            this.labelAverageOfFive.AutoSize = true;
+            this.labelAverageOfFive.Location = new System.Drawing.Point(97, 439);
+            this.labelAverageOfFive.Name = "labelAverageOfFive";
+            this.labelAverageOfFive.Size = new System.Drawing.Size(97, 17);
+            this.labelAverageOfFive.TabIndex = 7;
+            this.labelAverageOfFive.Tag = "Average of 5: ";
+            this.labelAverageOfFive.Text = "Average of 5: ";
+            // 
+            // labelAverageOfTwelve
+            // 
+            this.labelAverageOfTwelve.Location = new System.Drawing.Point(325, 439);
+            this.labelAverageOfTwelve.Name = "labelAverageOfTwelve";
+            this.labelAverageOfTwelve.Size = new System.Drawing.Size(105, 17);
+            this.labelAverageOfTwelve.TabIndex = 8;
+            this.labelAverageOfTwelve.Tag = "Average of 12: ";
+            this.labelAverageOfTwelve.Text = "Average of 12: ";
+            // 
             // CubeSolvesTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(534, 490);
+            this.Controls.Add(this.labelAverageOfTwelve);
+            this.Controls.Add(this.labelAverageOfFive);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnStop);
             this.Controls.Add(this.BtnStart);
-            this.Controls.Add(this.labelSessionSolves);
             this.Controls.Add(this.labelNoSolves);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelDoYourBest);
+            this.Controls.Add(this.labelSessionSolves);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "CubeSolvesTimer";
@@ -150,6 +172,8 @@
         private System.Windows.Forms.Button BtnStop;
         private System.Windows.Forms.Label labelDoYourBest;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelAverageOfFive;
+        private System.Windows.Forms.Label labelAverageOfTwelve;
     }
 }
 
