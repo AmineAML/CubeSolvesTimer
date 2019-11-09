@@ -132,6 +132,7 @@
             // 
             // labelAverageOfTwelve
             // 
+            this.labelAverageOfTwelve.AutoSize = true;
             this.labelAverageOfTwelve.Location = new System.Drawing.Point(325, 439);
             this.labelAverageOfTwelve.Name = "labelAverageOfTwelve";
             this.labelAverageOfTwelve.Size = new System.Drawing.Size(105, 17);
