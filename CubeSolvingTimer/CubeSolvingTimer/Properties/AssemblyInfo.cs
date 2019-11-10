@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CubeSolvingTimer")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Contact e-mail: amin_aml@live.fr")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("CubeSolvingTimer")]
