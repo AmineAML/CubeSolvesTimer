@@ -1,3 +1,0 @@
-﻿//Average of five
-it doesn't change the value as the element change, it does only after 5 new elements has changed
-It does only update if all the last 5 elements has changed

@@ -7,3 +7,12 @@ C:\Users\HP\Documents\Développement informatique\C#\CubeSolvesTimer\CubeSolving
 C:\Users\HP\Documents\Développement informatique\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.exe
 C:\Users\HP\Documents\Développement informatique\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.pdb
 C:\Users\HP\Documents\Développement informatique\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.csprojAssemblyReference.cache
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\bin\Debug\CubeSolvingTimer.exe.config
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\bin\Debug\CubeSolvingTimer.exe
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\bin\Debug\CubeSolvingTimer.pdb
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.csprojAssemblyReference.cache
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.CubeSolvesTimer.resources
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.Properties.Resources.resources
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.csproj.GenerateResource.cache
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.exe
+C:\Users\HP\Documents\IT development\C#\CubeSolvesTimer\CubeSolvingTimer\CubeSolvingTimer\obj\Debug\CubeSolvingTimer.pdb
